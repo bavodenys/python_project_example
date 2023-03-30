@@ -14,8 +14,8 @@ Install from BitBucket
 
 .. code-block:: text
 
-    git clone git clone https://BavoDenys@bitbucket.org/controls-tremec/sandboxbade.git
-    cd Bade_python_example_project
+    git clone git clone https://github.com/bavodenys/python_project_example.git
+    cd python_project_example
     pip install .
 
 
