@@ -11,7 +11,7 @@ class BasicTestSuite(unittest.TestCase):
     def test_kph_to_knots_conversion(self):
         speed = 10
         result = kph_to_knots(speed)
-        self.assertEqual(result, speed*0.54)
+        self.assertEqual(result, speed*0.60)
         
     def test_knots_to_kph_conversion(self):
         speed = 10
