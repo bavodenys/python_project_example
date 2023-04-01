@@ -3,15 +3,14 @@ import sys
 
 sys.path.append("..")
 
-from bade.speedconversion import kph_to_mph
+from bade.speedconversion import kph_to_knots
 
-# Adding comment in BitBucket to do a git pull
 def read_arguments():
-    parser = argparse.ArgumentParser(description='''Speed conversion''', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--speed",
+    parser = argparse.ArgumentParser(description='''Windspeed conversion''', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("--windspeed",
                         type=str,
                         required=True,
-                        help="speed")
+                        help="windspeed")
     return parser
 
 
@@ -19,6 +18,6 @@ def read_arguments():
 if __name__ == "__main__":
     parser = read_arguments()
     args = parser.parse_args()
-    speed_kph = float(args.speed)
-    speed_mph = kph_to_mph(speed_kph)
-    print(f"{speed_kph} kph = {speed_mph} mph")
+    windspeed_kph = float(args.windspeed)
+    windspeed_knots = kph_to_knots(windspeed_kph)
+    print(f"{windspeed_kph} kph = {windspeed_knots} kt")
