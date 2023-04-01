@@ -14,7 +14,7 @@ Install from GitHub
 
 .. code-block:: text
 
-    git clone git clone https://github.com/bavodenys/python_project_example.git
+    git clone https://github.com/bavodenys/python_project_example.git
     cd python_project_example
     pip install .
 

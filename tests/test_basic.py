@@ -8,15 +8,15 @@ import unittest
 class BasicTestSuite(unittest.TestCase):
     """Basic test cases."""
 
-    def test_kph_to_mph_conversion(self):
+    def test_kph_to_knots_conversion(self):
         speed = 10
-        result = kph_to_mph(speed)
-        self.assertEqual(result, speed*0.621)
+        result = kph_to_knots(speed)
+        self.assertEqual(result, speed*0.54)
         
-    def test_mph_to_kph_conversion(self):
+    def test_knots_to_kph_conversion(self):
         speed = 10
-        result = mph_to_kph(speed)
-        self.assertEqual(result, speed/0.621)
+        result = knots_to_kph(speed)
+        self.assertEqual(result, speed/0.54)
 
 
 if __name__ == '__main__':
