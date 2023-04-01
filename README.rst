@@ -10,7 +10,7 @@ Use Python 3.10 or newer
 Installation
 =======
 
-Install from BitBucket
+Install from GitHub
 
 .. code-block:: text
 
@@ -24,12 +24,12 @@ Example
 
 .. code-block:: python
 
-	from bade.speedconversion import kph_to_mph
+	from bade.speedconversion import kph_to_knots
 
 	if __name__ == "__main__":
-		speed_kph = 30
-		speed_mph = kph_to_mph(speed_kph)
-		print(f"{speed_kph} kph = {speed_mph} mph")
+		windspeed_kph = 30
+		windspeed_knots = kph_to_knots(windspeed_kph)
+		print(f"{windspeed_kph} kph = {windspeed_knots} kt")
 
 
 
